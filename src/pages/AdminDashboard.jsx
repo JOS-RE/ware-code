@@ -8,6 +8,7 @@ function AdminDashboard() {
   return (
     <div>
      {/* add the components here in < component name /> */}
+     Admin Dashboard
     </div>
   );
 }

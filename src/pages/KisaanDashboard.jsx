@@ -8,6 +8,7 @@ function KisaanDashboard() {
   return (
     <div>
      {/* add the components here in < component name /> */}
+     Kisaan Dashboard
     </div>
   );
 }

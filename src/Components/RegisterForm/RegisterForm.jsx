@@ -1,13 +1,14 @@
 import React from "react";
 import "./RegisterForm.css"
+import { Link } from "react-router-dom";
 
 export default function RegisterForm() {
     return (
         
-        <div >
+        <div>
             <div className="formr"> 
                 <div className="title">Welcome</div>
-                <div className="subtitle">Let's create your account!</div>
+                <div className="subtitle">Already a user ? <Link to="/login">Log in</Link> here</div>
                 <div className="input-container ic1">
                     <input id="firstname" className="input" type="text" placeholder="Full Name " />
                     {/* <div className="cut"></div>

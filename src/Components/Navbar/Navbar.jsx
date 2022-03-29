@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 import "./Navbar.css"
 import Logo from "./logo.png"
-import GIF from "./MAIN PAGE GIF.gif"
+
 
 export default function Navbar() {
     return (
@@ -18,10 +18,14 @@ export default function Navbar() {
 
                 <ul className="nav justify-content-center">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <Link to="/" style={{textDecoration:"none"}} >
+                            <div className="nav-link active" aria-current="page" href="#">
+                                Home
+                            </div>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#footer">Stats</a>
+                        <a className="nav-link" href="#footer">Status</a>
                     </li>
                     <li className="nav-item">
                         <img src={Logo} alt="" style={{ "marginLeft": "3%", "marginRight": "3%" }} />
@@ -31,22 +35,13 @@ export default function Navbar() {
                         <a className="nav-link" id="storage" href="#">Queue</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" id="about">About us</a>
+                        <a className="nav-link" id="about" href="#footer">About us</a>
                     </li>
                 </ul>
-
-
-
-            </div>
-            <div>
-                <img className="img-fluid" style={{ "marginTop": "3%",  "height":"30%"}} src={GIF}/><br />
-                    <Link to="/register">
-                        <button id="start" type="button">
-                            Get Started
-                        </button>
-                    </Link>
-
             </div>
         </div>
+
+
+
     );
 }

@@ -4,6 +4,7 @@ import Tableone from "../Components/table/Tableone";
 import RegisterForm from "../Components/RegisterForm/RegisterForm";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
+import Landing from "../Components/Landing/Landing";
 /***********************************/
 //          Import components       //
 /***********************************/
@@ -14,6 +15,7 @@ function Home() {
 
     {/* <ProgressBar /> */}
     <Navbar /> 
+    <Landing />
     <Tableone />
     {/* <RegisterForm /> */}
     <Footer />

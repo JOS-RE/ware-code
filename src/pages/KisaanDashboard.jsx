@@ -1,4 +1,8 @@
 import React from "react";
+import Navbar from "../Components/Navbar/Navbar";
+import Kisaabtab from "../Components/Kisaantab/Kisaantab";
+
+import Footer from "../Components/Footer/Footer";
 
 /***********************************/
 //          Import components       //
@@ -6,9 +10,12 @@ import React from "react";
 
 function KisaanDashboard() {
   return (
-    <div>
+    <div style={{backgroundColor:"#F8DF8B"}}>
      {/* add the components here in < component name /> */}
+     <Navbar />
      Kisaan Dashboard
+      <Kisaabtab />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,32 @@
+#start {
+    color: #ffffff;
+    background-color: #1f1e1e;
+    font-size: 19px;
+    border: 1px solid #2c2d30;
+    border-radius: 35px;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 0.5%;
+    margin-bottom: 4%;
+}
+
+#start:hover {
+    color: #303236;
+    background-color: #fdfcfc;
+} 
+
+/*SECTION LANDING 2*/
+
+#stats{
+    margin-top: 3%;
+    width:70%;
+    margin-left:15%;
+    margin-bottom: 3%;
+    }
+    .stats_h {
+    font-family: 'Comfortaa', cursive;
+    font-size: 350%;
+    text-align: center;
+    margin-top: 3%;
+    }

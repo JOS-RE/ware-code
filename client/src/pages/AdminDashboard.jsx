@@ -7,15 +7,15 @@ import Footer from "../Components/Footer/Footer";
 /***********************************/
 
 function AdminDashboard() {
-  return (
-    <div style={{backgroundColor:"#F8DF8B"}}>
-     {/* add the components here in < component name /> */}
-     < Navbar />
-     Admin Dashboard
-      <Admintab />
-      <Footer />
-    </div>
-  );
+    return (
+        <div style={{ backgroundColor: "#F8DF8B" }}>
+            {/* add the components here in < component name /> */}
+            < Navbar />
+            Admin Dashboard
+            <Admintab />
+            <Footer />
+        </div>
+    );
 }
 
 export default AdminDashboard;

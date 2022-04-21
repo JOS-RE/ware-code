@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProgressBar from "../Components/table/progress/ProgressBar";
 import Tableone from "../Components/table/Tableone";
 import RegisterForm from "../Components/RegisterForm/RegisterForm";

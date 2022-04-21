@@ -1,0 +1,11 @@
+{
+    "_id": {
+        "$oid": "625fec745a24ae3384491ef1"
+    },
+    "cropName": "Rice",
+    "msp": 350,
+    "currentPrice": 480,
+    "totalCapacity": 200,
+    "availableCapacity": 70,
+    "queue": []
+}

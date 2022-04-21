@@ -1,0 +1,57 @@
+{
+    "$__": {
+        "activePaths": {
+            "paths": {
+                "queue": "init",
+                "_id": "init",
+                "cropName": "init",
+                "msp": "init",
+                "currentPrice": "init",
+                "totalCapacity": "init",
+                "availableCapacity": "init"
+            },
+            "states": {
+                "ignore": {},
+                "default": {},
+                "init": {
+                    "_id": true,
+                    "cropName": true,
+                    "msp": true,
+                    "currentPrice": true,
+                    "totalCapacity": true,
+                    "availableCapacity": true,
+                    "queue": true
+                },
+                "modify": {},
+                "require": {}
+            },
+            "stateNames": [
+                "require",
+                "modify",
+                "init",
+                "default",
+                "ignore"
+            ]
+        },
+        "strictMode": true,
+        "skipId": true,
+        "selected": {},
+        "fields": {},
+        "exclude": null,
+        "_id": "625fb54da053d67995a24aa3"
+    },
+    "$isNew": false,
+    "_doc": {
+        "_id": "625fb54da053d67995a24aa3",
+        "cropName": "Wheat",
+        "msp": 300,
+        "currentPrice": 400,
+        "totalCapacity": 500,
+        "availableCapacity": 450,
+        "queue": [
+            "625fd143aedae2b770be09ff"
+        ]
+    },
+    "inQueue": true,
+    "queueNumber": 1
+}

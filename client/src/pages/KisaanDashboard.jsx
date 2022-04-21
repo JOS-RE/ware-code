@@ -13,7 +13,6 @@ function KisaanDashboard() {
     <div style={{backgroundColor:"#F8DF8B"}}>
      {/* add the components here in < component name /> */}
      <Navbar />
-     Kisaan Dashboard
       <Kisaabtab />
       <Footer />
     </div>

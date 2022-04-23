@@ -136,7 +136,7 @@ export default function Kisaabtab() {
         <div style={{ marginBottom: "2%" }}>
             <div className="containerad">
                 <div>
-                    <h4 className="ktabHeading" style={{textAlign: "center" }}>Customer Details</h4>
+                    <h4 className="ktabHeading" style={{textAlign: "center" }}>Warehouse space management details</h4>
                     <ul className="responsive-table" style={{ textAlign: "center" }}>
                         <li className="table-header">
                             <div className="col col-1">S.no</div>

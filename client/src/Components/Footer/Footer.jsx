@@ -8,7 +8,7 @@ const Footer = () => {
           Managed and presented by Team Ware-Code
       </div>
        <div className="btn_wrap">
-        <span>Follow us</span>
+        <span>Explore more</span>
         <div className="containerfooter">
             <a href="https://www.enam.gov.in/web/"><i className="fa fa-balance-scale" ></i></a>
             <i href="https://farmer.gov.in/" className="fa fa-building"></i>

@@ -3,11 +3,22 @@ body {
 }
 .containerhm {
 	min-width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 10%;
+	margin-right: 10%;
 	padding-top: 3%;
 	padding-left: 10px;
 	padding-right: 35px;
+
+	
+	
+	h4 {
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #00bcd4;
+		// margin-top : 12%;
+
+		
+	}
 }
 .responsive-tableh {
 	li {
@@ -30,25 +41,25 @@ body {
 	.table-row {
 		background-color: #ffffff;
 		box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-		font-size: 1.05rem;
+		font-size: 1.08rem;
 	}
 	.col-1 {
-		flex-basis: 12%;
+		flex-basis: 20%;
 	}
 	.col-2 {
-		flex-basis: 16%;
+		flex-basis: 20%;
 	}
 	.col-3 {
-		flex-basis: 21%;
+		flex-basis: 20%;
 	}
 	.col-4 {
-		flex-basis: 13%;
+		flex-basis: 20%;
 	}
 	.col-5 {
-		flex-basis: 21%;
+		flex-basis: 0%;
 	}
 	.col-6 {
-		flex-basis: 17%;
+		flex-basis: 20%;
 	}
 }
 @media (max-width: 767px) {

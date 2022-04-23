@@ -10,10 +10,10 @@ const Footer = () => {
        <div className="btn_wrap">
         <span>Follow us</span>
         <div className="containerfooter">
-            <a href="https://facebook.com"><i className="fab fa-facebook-f" ></i></a>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-github"></i>
+            <a href="https://www.enam.gov.in/web/"><i className="fa fa-balance-scale" ></i></a>
+            <i href="https://farmer.gov.in/" className="fa fa-building"></i>
+            <i href="https://agmarknet.gov.in/" className="fa fa-globe"></i>
+            <i href="https://github.com/guptasajal411/ware-code" className="fab fa-github"></i>
         </div>
     </div>
     <br />

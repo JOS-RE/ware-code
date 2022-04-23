@@ -58,7 +58,7 @@ export default function LoginForm() {
                         <div className="input-container ic2">
                             <input
                                 className="input"
-                                type="text"
+                                type="password"
                                 placeholder="Password"
                                 value={password}
                                 onChange={(event) => { setPassword(event.target.value) }}

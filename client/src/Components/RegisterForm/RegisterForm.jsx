@@ -52,7 +52,7 @@ export default function RegisterForm() {
                         <label for="lastname" className="placeholder">Email</label> */}
                     </div>
                     <div className="input-container ic2">
-                        <input id="email" className="input" type="text" placeholder="Password " value={password} onChange={(e) => setPassword(e.target.value)} />
+                        <input id="email" className="input" type="password" placeholder="Password " value={password} onChange={(e) => setPassword(e.target.value)} />
                         {/* <div className="cut cut-short"></div>
                         <label for="email" className="placeholder">Password</label> */}
                     </div>

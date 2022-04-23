@@ -11,7 +11,9 @@ function AdminDashboard() {
         <div style={{ backgroundColor: "#F8DF8B" }}>
             {/* add the components here in < component name /> */}
             < Navbar />
-            Admin Dashboard
+            <div style={{textAlign: "center" }}>
+            Welcome to the Admin Dashboard. 
+            </div>
             <Admintab />
             <Footer />
         </div>

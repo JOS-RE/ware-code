@@ -136,7 +136,7 @@ export default function Kisaabtab() {
         <div style={{ marginBottom: "2%" }}>
             <div className="containerad">
                 <div>
-                    <h4 className="ktabHeading">Customer Details</h4>
+                    <h4 className="ktabHeading" style={{textAlign: "center" }}>Customer Details</h4>
                     <ul className="responsive-table" style={{ textAlign: "center" }}>
                         <li className="table-header">
                             <div className="col col-1">S.no</div>
@@ -158,6 +158,7 @@ export default function Kisaabtab() {
                                         <div className="col col-1">{index + 1}</div>
                                         <div className="col col-2">
                                             <input
+                                            className="inputtxt"
                                                 type="text"
                                                 value={i.cropName}
                                                 onChange={(event) => { handleCropNameChange(event, index) }}
@@ -165,6 +166,7 @@ export default function Kisaabtab() {
                                         </div>
                                         <div className="col col-3">
                                             <input
+                                            className="inputnumber"
                                                 type="number"
                                                 value={i.availableCapacity}
                                                 onChange={(event) => { handleAvailableCapacityChange(event, index) }}
@@ -172,6 +174,7 @@ export default function Kisaabtab() {
                                         </div>
                                         <div className="col col-4">
                                             <input
+                                            className="inputnumber"
                                                 type="number"
                                                 value={i.totalCapacity}
                                                 onChange={(event) => { handleTotalCapacityChange(event, index) }}
@@ -180,6 +183,7 @@ export default function Kisaabtab() {
                                         <div className="col col-5">
                                             Rs.
                                             <input
+                                            className="inputnumber"
                                                 type="number"
                                                 value={i.msp}
                                                 onChange={(event) => { handleMspChange(event, index) }}
@@ -187,6 +191,7 @@ export default function Kisaabtab() {
                                         </div>
                                         <div className="col col-6">
                                             <input
+                                            className="inputnumber"
                                                 type="number"
                                                 value={i.currentPrice}
                                                 onChange={(event) => { handleCurrentPriceChange(event, index) }}
@@ -194,8 +199,8 @@ export default function Kisaabtab() {
                                         </div>
                                         <div className="col col-7">{i.queue.length}</div>
                                         <div className="col col-8">
-                                            <button type="button" onClick={(event) => {handleShortening(event, index)}}>Shorten queue</button>
-                                            <button type="submit">Update</button>
+                                            <button className="form-btn" type="button" onClick={(event) => {handleShortening(event, index)}}>Shorten queue</button> <br />
+                                            <button className="form-btn2" type="submit">Update</button>
                                         </div>
                                     </li>
                                 </form>
@@ -206,6 +211,7 @@ export default function Kisaabtab() {
                                 <div className="col col-1">New</div>
                                 <div className="col col-2">
                                     <input
+                                    className="inputtxt"
                                         type="text"
                                         value={newCrop.cropName}
                                         onChange={(event) => {
@@ -218,6 +224,7 @@ export default function Kisaabtab() {
                                 </div>
                                 <div className="col col-3">
                                     <input
+                                    className="inputnumber"
                                         type="number"
                                         value={newCrop.availableCapacity}
                                         onChange={(event) => {
@@ -230,6 +237,7 @@ export default function Kisaabtab() {
                                 </div>
                                 <div className="col col-4">
                                     <input
+                                    className="inputnumber"
                                         type="number"
                                         value={newCrop.totalCapacity}
                                         onChange={(event) => {
@@ -243,6 +251,7 @@ export default function Kisaabtab() {
                                 <div className="col col-5">
                                     Rs.
                                     <input
+                                    className="inputnumber"
                                         type="number"
                                         value={newCrop.msp}
                                         onChange={(event) => {
@@ -255,6 +264,7 @@ export default function Kisaabtab() {
                                 </div>
                                 <div className="col col-6">
                                     <input
+                                    className="inputnumber"
                                         type="number"
                                         value={newCrop.currentPrice}
                                         onChange={(event) => {
@@ -267,7 +277,7 @@ export default function Kisaabtab() {
                                 </div>
                                 <div className="col col-7"></div>
                                 <div className="col col-8">
-                                    <button type="submit">Add new crop</button>
+                                    <button className="form-btnsub" type="submit">Add new crop</button>
                                 </div>
                             </li>
                         </form>

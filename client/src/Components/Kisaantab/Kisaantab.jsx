@@ -43,7 +43,7 @@ export default function Kisaabtab() {
         }
         dashboard();
     }, []);
-    async function queueHandler(event, cropId){
+    async function queueHandler(event, cropId) {
         event.preventDefault();
         await fetch(Domain + "/queue", {
             method: "POST",
@@ -58,7 +58,7 @@ export default function Kisaabtab() {
             })
     }
 
-    async function retractHandler(event, cropId){
+    async function retractHandler(event, cropId) {
         event.preventDefault();
         await fetch(Domain + "/retract", {
             method: "POST",
@@ -76,15 +76,15 @@ export default function Kisaabtab() {
         <div style={{ marginBottom: "2%" }}>
             <div className="containerktab">
                 <div>
-                    <h4 className="ktabHeading">Your Warehouse allotment details</h4>
+                    <h4 className="ktabHeading" style={{textAlign: "center" }}>Your Warehouse allotment details</h4>
                     <ul className="responsive-tablek">
                         <li className="table-header">
                             <div className="col col-1">Crop</div>
-                            <div className="col col-2">Available Space</div>
-                            <div className="col col-3">Total Space</div>
+                            <div className="col col-2">Space<br /> Left</div>
+                            <div className="col col-3">Total <br /> Space</div>
                             <div className="col col-4">MSP</div>
-                            <div className="col col-5">Current Price</div>
-                            <div className="col col-6">Your Status</div>
+                            <div className="col col-5">Storage Pricing</div>
+                            <div className="col col-6" style = {{fontSize : "1.2rem"}}>Your Status</div>
                         </li>
 
                         {dashboardData.map((i, index) => {
@@ -93,13 +93,14 @@ export default function Kisaabtab() {
                                     <div className="col col-1">{i._doc.cropName}</div>
                                     <div className="col col-2">{i._doc.availableCapacity}</div>
                                     <div className="col col-3">{i._doc.totalCapacity}</div>
-                                    <div className="col col-4">{i._doc.msp}</div>
-                                    <div className="col col-5">{i._doc.currentPrice} Rs.</div>
+                                    <div className="col col-4">₹ {i._doc.msp}</div>
+                                    <div className="col col-5">₹ {i._doc.currentPrice} Rs / KG</div>
                                     <div className="col col-6">
                                         {i.inQueue ? <>
-                                            No. {i.queueNumber}/{i._doc.queue.length} in queue <br/>
-                                            <button onClick={(event) => {retractHandler(event, i._doc._id)}}>Retract</button>
-                                        </> : <button onClick={(event) => {queueHandler(event, i._doc._id)}}>Queue yourself! <br />{i._doc.queue.length} in queue</button>}
+                                            <div>
+                                            Queue Status : {i.queueNumber}/{i._doc.queue.length} <br />
+                                            <button className="statusqueue2" onClick={(event) => { retractHandler(event, i._doc._id) }}> Leave</button></div>
+                                        </> : <button className="status-queue1" onClick={(event) => { queueHandler(event, i._doc._id) }}>Join Queue ! <br /> Waiting list : {i._doc.queue.length}</button>}
                                     </div>
                                 </li>
                             );
@@ -110,7 +111,15 @@ export default function Kisaabtab() {
                     </ul>
 
                 </div>
-
+                
+                <button className="logout-ktab" onClick={(event) => {
+                    event.preventDefault();
+                    setKisaan({ username: null, token: null });
+                    localStorage.removeItem("token");
+                    localStorage.removeItem("username");
+                    navigate("/login");
+                }}>Logout</button>
+               
             </div>
         </div>
     )
